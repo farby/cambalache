@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/bootstrap-theme.css"/>
+	<link rel="stylesheet" href="css/cover.css"/>
+	<title></title>
+</head>
+<body>
+	<div class="site-wrapper" align="center">
+		<div class="site-wrapper-inner">
+			<div class="cover-container">
+				<div class="masthead clearfix">
+					<div class="inner">
+						<h1 class="masthead-brand"><a onclick="if($('#volu').hasClass('glyphicon-volume-up')){$('#volu').removeClass('glyphicon-volume-up');$('#volu').addClass('glyphicon-volume-off');}else{$('#volu').removeClass('glyphicon-volume-off');$('#volu').addClass('glyphicon-volume-up');}" href="#">
+						<span id="volu" class="glyphicon glyphicon-volume-up"></span></a></h1>
+						<ul class="nav masthead-nav">
+							<li id="mChat">
+								<a onclick="if($('#chat').hasClass('hide')){$('#chat').removeClass('hide');$('#mChat').addClass('active');}
+								else{$('#chat').addClass('hide');$('#mChat').removeClass('active');}" href="#">chat</a>
+							</li>
+							<li id="mProg">
+								<a onclick="if($('#prog').hasClass('hide')){$('#prog').removeClass('hide');$('#mProg').addClass('active');}
+								else{$('#prog').addClass('hide');$('#mProg').removeClass('active');}" href="#">programación</a>
+							</li>
+							<li id="mCont">
+								<a onclick="if($('#cont').hasClass('hide')){$('#cont').removeClass('hide');$('#mCont').addClass('active');}
+								else{$('#cont').addClass('hide');$('#mCont').removeClass('active');}" href="#">contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="inner cover">
+					<h1 class="cover-heading">cambalache</h1>
+					<p class="lead">radio</p>
+				</div>
+				<iframe src="https://embed.spotify.com/?uri=spotify:track:4bz7uB4edifWKJXSDxwHcs" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+				<div class="mastfoot">
+					<div id="chat" class="hide">
+						<h2>chat</h2>
+					</div>
+					<div id="prog" class="hide">
+						<h2>programación</h2>
+					</div>
+					<div id="cont" class="hide">
+						<h2>contacto</h2>
+						<div class="panel-body">
+							<div class="input-group">
+								<span class="input-group-addon">nombre</span>
+								<input type="text" class="form-control" placeholder="nombre">
+							</div><br>
+							<div class="input-group">
+								<span class="input-group-addon">e-mail</span>
+								<input type="text" class="form-control" placeholder="email" required>
+							</div><br>
+							<div class="input-group">
+								<span class="input-group-addon">mensaje</span>
+								<input type="text" class="form-control" placeholder="mensaje">
+							</div><br>
+							<button type="button" class="btn btn-success btn-lg">
+								<span class="glyphicon glyphicon-ok"></span>
+							</button>
+						</div>
+					</div>
+					<div class="inner">
+						<p>desarrollo & diseño</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="../../dist/js/bootstrap.min.js"></script>
+	<script src="../../assets/js/docs.min.js"></script>
+</body>
+</html>
